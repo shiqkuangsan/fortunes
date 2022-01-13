@@ -3,7 +3,7 @@
 Fortune is a simple Unix program that displays a random message from a database of quotations.
 
 ```
-$ fortune
+ fortune
 
 "What we see is mainly what we look for."
   ~Unknown
@@ -27,33 +27,33 @@ First install [fortune package](http://linux.die.net/man/6/fortune). If your com
 
 ```bash
 # Debian/Ubuntu
-$ sudo apt-get install fortune
+ sudo apt-get install fortune
 
 # Mac
-$ brew install fortune
+ brew install fortune
 ```
 
 Then install the repo.
 
 ```bash
 # Debian/Ubuntu
-$ git clone git@github.com:ruanyf/fortunes.git
-$ sudo mv fortunes/data/* /usr/share/games/fortunes/
+ git clone git@github.com:ruanyf/fortunes.git
+ sudo mv fortunes/data/* /usr/share/games/fortunes/
 
 # Mac
-$ git clone git@github.com:ruanyf/fortunes.git
-$ strfile fortunes/data/fortunes
-$ strfile fortunes/data/chinese
-$ strfile fortunes/data/tang300
-$ strfile fortunes/data/song100
-$ strfile fortunes/data/diet
-$ mv fortunes/data/* /usr/local/share/games/fortunes/
+ git clone git@github.com:ruanyf/fortunes.git
+ strfile fortunes/data/fortunes
+ strfile fortunes/data/chinese
+ strfile fortunes/data/tang300
+ strfile fortunes/data/song100
+ strfile fortunes/data/diet
+ mv fortunes/data/* /usr/local/share/games/fortunes/
 ```
 
 ## Usage
 
 ```bash
-$ fortune [OPTIONS] [/path/to/fortunes]
+ fortune [OPTIONS] [/path/to/fortunes]
 ```
 
 Options
@@ -67,7 +67,7 @@ Options
 Example of `-c`
 
 ```bash
-$ fortune -c
+ fortune -c
 
 (fortunes)
 %
@@ -78,7 +78,7 @@ $ fortune -c
 Example of `-f`
 
 ```bash
-$ fortune -f
+ fortune -f
 
 100.00% /usr/share/games/fortunes
     17.21% fortunes
@@ -90,13 +90,13 @@ $ fortune -f
 Example of `-e`
 
 ```bash
-$ fortune -e chinese fortunes
+ fortune -e chinese fortunes
 #  is equivalent to
-$ fortune 50% chinese 50% fortunes
+ fortune 50% chinese 50% fortunes
 
-$ fortune -e chinese fortunes tang300 song100
+ fortune -e chinese fortunes tang300 song100
 #  is equivalent to
-$ fortune 25% chinese 25% fortunes 25% tang300  25% song100
+ fortune 25% chinese 25% fortunes 25% tang300  25% song100
 ```
 
 ## How to automatically launch fortune when opening a shell window
